@@ -1,11 +1,11 @@
+const input = document.getElementById('input');
 
-
-function addingEventListener(click, clickAlert) {
-     const input = document.getElementById('input');
-
-function clickAlert() {
+function addingEventListener(event, addEventListener) {
+    
+input.addEventListener(event, function() {
   alert('I was clicked!');
+}); 
+
 }
 
-input.addEventListener('click', clickAlert); 
-}
+addingEventListener("keydown")
